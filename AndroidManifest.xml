@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- TODO: Replace "com.example.hellomap" with your desired package name -->
+<!-- TODO: Replace "com.lleguebien.prototipo1" with your desired package name -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.example.hellomap"
+          package="com.lleguebien.prototipo1"
           android:versionCode="1"
           android:versionName="1.0">
 
     <uses-sdk
-            android:minSdkVersion="8"
-            android:targetSdkVersion="17"/>
+            android:minSdkVersion="10"
+            android:targetSdkVersion="19"/>
 
     <!-- TODO: Replace "com.example.hellomap" with your package name -->
     <permission
-            android:name="com.example.hellomap.permission.MAPS_RECEIVE"
+            android:name="com.lleguebien.prototipo1.permission.MAPS_RECEIVE"
             android:protectionLevel="signature"/>
-    <uses-permission android:name="com.example.hellomap.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="com.lleguebien.prototipo1.permission.MAPS_RECEIVE"/>
 
     <!-- The following four permissions -->
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -33,12 +33,16 @@
     <application
             android:label="@string/app_name"
             android:icon="@drawable/ic_launcher">
+            
+        <meta-data
+ 				android:name="com.google.android.gms.version"
+ 				android:value="@integer/google_play_services_version"/>
 
         <!-- TODO: Insert your Maps API key here. See this page for more information:
              https://developers.google.com/maps/documentation/android/start#the_google_maps_api_key -->
         <meta-data
                 android:name="com.google.android.maps.v2.API_KEY"
-                android:value="your_api_key"/>
+                android:value="AIzaSyDRDDw8HJFpGBhduRVa9yIsvH0jZRz0sLA"/>
 
         <activity
                 android:name="MainActivity"

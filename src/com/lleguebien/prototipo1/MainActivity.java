@@ -1,4 +1,4 @@
-package com.example.hellomap;
+package com.lleguebien.prototipo1;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentActivity;
